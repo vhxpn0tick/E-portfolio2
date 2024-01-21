@@ -84,66 +84,21 @@ class __TwigTemplate_a26c941a2c06def194703a7db08eabaa extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "<script>
-function downloadPDF() {
-  var element = document.getElementById('content-to-download')
-  var options = {
-    margin:       10,
-    filename:     'page.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-  html2pdf().from(element).set(options).save();
-}
-  </script>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        color: #000;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-    }
-    .header {
-        text-align: center;
-        border-bottom: 2px solid #000;
-    }
-    .left-column {
-        float: left;
-        width: 45%;
-        margin-right: 5%; 
+        echo "
+<button onclick=\"downloadPDF()\" class=\"btn btn-primary border-primary\">Télécharger en PDF</button>
 
-    }
-    .right-column {
-        float: right;
-        width: 45%;
-        margin-left: 5%; 
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section-title {
-        font-weight: bold;
-    }
-</style><button onclick=\"downloadPDF()\">Télécharger en PDF</button>
-
-    <div id=\"content-to-download\" class=\"container\">
+    <div id=\"content-to-download\" class=\"container\" type=\"button\">
         <header class=\"header\">
             <h1>CV Mathieu Bovy</h1>
             <img src=\"";
-        // line 57
+        // line 12
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("CV.png"), "html", null, true);
-        echo "\" alt=\"Photo de Mathieu Bovy\" />
+        echo "\" />
             
         </header>
-        <div class=\"left-column\">
-            <div class=\"section\">
-                <h2 class=\"section-title\">Compétences :</h2>
+        <div class=\"gauche\">
+            <div >
+                <h2 >Compétences :</h2>
                 <ul>
                     <li>Attentif à l'accueil du public</li>
                     <li>Bonne maitrise des outils informatiques </li>
@@ -159,8 +114,8 @@ function downloadPDF() {
                 </ul>
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Savoir être :</h2>
+            <div >
+                <h2 >Savoir être :</h2>
             <ul>
                 <li>Rigoureux</li>
                 <li>Attentif</li>
@@ -177,8 +132,8 @@ function downloadPDF() {
 
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Expériences professionnelles :</h2>
+            <div>
+                <h2 >Expériences professionnelles :</h2>
                 <h3>Ouvrier Polyvalent :</h3>
                 <ul>
                     <li>La Découpe Stéphanoise 
@@ -198,21 +153,21 @@ function downloadPDF() {
                     </li>
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Divers :</h2>
+            <div >
+                <h2>Divers :</h2>
                 <ul>
                     <li>Arbitre départemental de basketball</li>
                     <li>membre du bureau d’un club sportif</li>
                     <li>responsable arbitrage et formation arbitre de ce club</li>
             </div>
         </div>
-        <div class=\"right-column\">
-            <div class=\"section\">
-                <h2 class=\"section-title\">Informations Personnelles</h2>
+        <div class=\"droite\">
+            <div >
+                <h2>Informations Personnelles</h2>
                 <p>Mathieu Bovy<br>12/03/2005</p>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Formation</h2>
+            <div>
+                <h2 >Formation</h2>
                 <ul>
                     <li>Brevet des college <br>
                         Année 2020</li>
@@ -222,15 +177,15 @@ function downloadPDF() {
                     <li>BUT réseaux et télécommunications<br>
                         En cours</li>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Langues</h2>
+            <div >
+                <h2 >Langues</h2>
                 <ul>
                     <li>Allemand (A2/B1)</li>
                     <li>Anglais (B1/B2)</li>
                 </ul>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Coordonnées</h2>
+            <div>
+                <h2>Coordonnées</h2>
                 <ul>
                     <li>mail : Mathieubovydumas@gmail.com</li>
                     <li>téléphone : 07 68 56 71 22</li>
@@ -239,8 +194,6 @@ function downloadPDF() {
 
             </div>
         </div>
-        <div style=\"clear: both;\"></div>
-        <!-- Autres sections si nécessaire -->
     </div>
     
 ";
@@ -273,7 +226,7 @@ function downloadPDF() {
      */
     public function getDebugInfo()
     {
-        return array (  140 => 57,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
+        return array (  95 => 12,  87 => 6,  77 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -283,63 +236,18 @@ function downloadPDF() {
 {% block title %}{% endblock %}
 
 {% block body %}
-<script>
-function downloadPDF() {
-  var element = document.getElementById('content-to-download')
-  var options = {
-    margin:       10,
-    filename:     'page.pdf',
-    image:        { type: 'jpeg', quality: 0.98 },
-    html2canvas:  { scale: 2, logging: true, dpi: 192, letterRendering: true },
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-  };
-  html2pdf().from(element).set(options).save();
-}
-  </script>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        color: #000;
-    }
-    .container {
-        width: 80%;
-        margin: auto;
-    }
-    .header {
-        text-align: center;
-        border-bottom: 2px solid #000;
-    }
-    .left-column {
-        float: left;
-        width: 45%;
-        margin-right: 5%; 
 
-    }
-    .right-column {
-        float: right;
-        width: 45%;
-        margin-left: 5%; 
-    }
-    .section {
-        margin-bottom: 20px;
-    }
-    .section-title {
-        font-weight: bold;
-    }
-</style><button onclick=\"downloadPDF()\">Télécharger en PDF</button>
+<button onclick=\"downloadPDF()\" class=\"btn btn-primary border-primary\">Télécharger en PDF</button>
 
-    <div id=\"content-to-download\" class=\"container\">
+    <div id=\"content-to-download\" class=\"container\" type=\"button\">
         <header class=\"header\">
             <h1>CV Mathieu Bovy</h1>
-            <img src=\"{{ asset('CV.png') }}\" alt=\"Photo de Mathieu Bovy\" />
+            <img src=\"{{ asset('CV.png') }}\" />
             
         </header>
-        <div class=\"left-column\">
-            <div class=\"section\">
-                <h2 class=\"section-title\">Compétences :</h2>
+        <div class=\"gauche\">
+            <div >
+                <h2 >Compétences :</h2>
                 <ul>
                     <li>Attentif à l'accueil du public</li>
                     <li>Bonne maitrise des outils informatiques </li>
@@ -355,8 +263,8 @@ function downloadPDF() {
                 </ul>
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Savoir être :</h2>
+            <div >
+                <h2 >Savoir être :</h2>
             <ul>
                 <li>Rigoureux</li>
                 <li>Attentif</li>
@@ -373,8 +281,8 @@ function downloadPDF() {
 
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Expériences professionnelles :</h2>
+            <div>
+                <h2 >Expériences professionnelles :</h2>
                 <h3>Ouvrier Polyvalent :</h3>
                 <ul>
                     <li>La Découpe Stéphanoise 
@@ -394,21 +302,21 @@ function downloadPDF() {
                     </li>
             </div>
 
-            <div class=\"section\">
-                <h2 class=\"section-title\">Divers :</h2>
+            <div >
+                <h2>Divers :</h2>
                 <ul>
                     <li>Arbitre départemental de basketball</li>
                     <li>membre du bureau d’un club sportif</li>
                     <li>responsable arbitrage et formation arbitre de ce club</li>
             </div>
         </div>
-        <div class=\"right-column\">
-            <div class=\"section\">
-                <h2 class=\"section-title\">Informations Personnelles</h2>
+        <div class=\"droite\">
+            <div >
+                <h2>Informations Personnelles</h2>
                 <p>Mathieu Bovy<br>12/03/2005</p>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Formation</h2>
+            <div>
+                <h2 >Formation</h2>
                 <ul>
                     <li>Brevet des college <br>
                         Année 2020</li>
@@ -418,15 +326,15 @@ function downloadPDF() {
                     <li>BUT réseaux et télécommunications<br>
                         En cours</li>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Langues</h2>
+            <div >
+                <h2 >Langues</h2>
                 <ul>
                     <li>Allemand (A2/B1)</li>
                     <li>Anglais (B1/B2)</li>
                 </ul>
             </div>
-            <div class=\"section\">
-                <h2 class=\"section-title\">Coordonnées</h2>
+            <div>
+                <h2>Coordonnées</h2>
                 <ul>
                     <li>mail : Mathieubovydumas@gmail.com</li>
                     <li>téléphone : 07 68 56 71 22</li>
@@ -435,8 +343,6 @@ function downloadPDF() {
 
             </div>
         </div>
-        <div style=\"clear: both;\"></div>
-        <!-- Autres sections si nécessaire -->
     </div>
     
 {% endblock %}

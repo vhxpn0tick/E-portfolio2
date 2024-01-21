@@ -3,9 +3,9 @@
     <head class="bg">
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" type="image/png" href="{{ asset('logo.png') }}">
+        <link rel="icon" type="image/png" href="{{asset('logo.png') }}">
         <link rel= "stylesheet" href="https://bootswatch.com/5/pulse/bootstrap.min.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
+        <link rel="stylesheet" href="{{asset('stylesheet.css') }}">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -16,88 +16,21 @@
         {% endblock %}
     </head>
     <body class="bg">
-      <style>
-        .bg {
-              position: relative; /* Important pour positionner correctement le pseudo-élément */
-              background-color: rgba(187, 185, 185, 0.8); /* Couleur de fond légèrement transparente */
-              height: 120vh;
-              color: black;
-            }
-        .bg::before {
-          content: ''; /* Nécessaire pour que le pseudo-élément s'affiche */
-          position: absolute; /* Positionnement absolu par rapport à .bg */
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url("{{ asset('logo2.png') }}"); /* Remplacez par le chemin de votre image */
-          background-repeat: no-repeat; /* Empêche la répétition de l'image */
-          background-position: center center; /* Centre l'image */
-          opacity: 0.3; /* Valeur de transparence de l'image de fond */
-          z-index: -1; /* Place le pseudo-élément sous le contenu du .bg */
-        }
-        .voila{
-          color: rgba(187, 185, 185);
-        }
-        .marge{
-          margin-top : 5% ;
-          margin-right : 5%;
-          margin-left: 10% ;
 
-        }
-        .marge2{
-          margin-top : 5% ;
-          margin-left : 5%;
-          margin-right: 10% ;
-
-        }
-        .test{
-          background-color:#9354f1 ;
-          border: 2%;
-          color : black ;
-          margin-top: 3%;
-          
-          
-        }
-        .footer {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background-color: #333; /* Choisissez la couleur de fond appropriée */
-          color: white; /* Couleur du texte */
-          text-align: center;
-        }
-        .border-primary {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: left ;
-          
-
-        }
-        .rounded-corners {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: right ;
-          
-
-        }
-
-        </style>
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
           <a class="navbar-brand voila" href="/">E-Portfolio</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler" type="button" >
           </button>
-          <div class="collapse navbar-collapse " id="navbarColor01">
+          <div class="navbar-collapse">
             <ul class="navbar-nav me-auto">
               <li class="nav-item">
-                <a class="nav-link active voila" href="/">Accueil
-                  <span class="visually-hidden">(current)</span>
+                <a class="nav-link" href="/">Accueil
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/infos">A propos de moi</a>
-              </li> ???
+              </li> 
               <li class="nav-item">
                 <a class="nav-link" href="/CV">CV</a>
               </li>
@@ -110,10 +43,13 @@
               <li class="nav-item">
                 <a class="nav-link" href="/RT3">Programmer</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/formulaire">Télécharger</a>
+              </li>
             </ul>
             <form class="d-flex">
-              <input class="form-control me-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-secondary  my-2 my-sm-0" type="submit">Rechercher</button>
+              <input class="form-control"  placeholder="Recherche">
+              <button class="btn btn-secondary" >Rechercher</button>
             </form>
           </div>
         </div>

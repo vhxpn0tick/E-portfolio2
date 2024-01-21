@@ -86,9 +86,9 @@ class __TwigTemplate_858de84f5d18be75e3b9d20b8979b51a extends Template
         // line 6
         echo "<img src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("photo3.jpg"), "html", null, true);
-        echo "\" alt=\"Description de la photo\" class=\"border-primary marge2\" width=\"250\" height=\"auto\">
+        echo "\" class=\"border-primary marge2\" width=\"450\" height=\"auto\">
 
-<div class=\"card border-primary offset-xxl-1 mb- test\"  style=\"max-width: 30rem;\">
+<div class=\"card border-primary mb- test\"  style=\"max-width: 30rem;\">
     <div class=\"card-header\"><h1> Connecter les entreprises et usagers </h1>
         <br>
         <br>
@@ -96,23 +96,23 @@ class __TwigTemplate_858de84f5d18be75e3b9d20b8979b51a extends Template
     <div class=\"card-body\">
         <p><strong>Mesurer et analyser des signaux</strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 50%;\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 50%;\"  ></div>
             </div>
             <p><strong>Caractériser des système de transmissions et découvrir les modélisation mathématiques </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 65%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 65%;\" ></div>
             </div>
             <p><strong> Déployer des supports de transmissions </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 60%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 60%;\"></div>
             </div>
             <p><strong>Connecter les systèmes de ToIP </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 0%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 0%;\"></div>
             </div>
             <p><strong>Communiquer avec le cllient/collaborateur </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 0%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 0%;\"></div>
              </div>
             </div>
         </div>
@@ -120,7 +120,7 @@ class __TwigTemplate_858de84f5d18be75e3b9d20b8979b51a extends Template
     <img src=\"";
         // line 37
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("photo6.jpg"), "html", null, true);
-        echo "\" alt=\"Description de la photo\" class=\"rounded-corners marge\" width=\"250\" height=\"auto\">
+        echo "\" class=\"rounded-corners marge\" width=\"450\" height=\"auto\">
 
     
   
@@ -166,9 +166,9 @@ class __TwigTemplate_858de84f5d18be75e3b9d20b8979b51a extends Template
 {% block title %}{% endblock %}
 
 {% block body %}
-<img src=\"{{ asset('photo3.jpg') }}\" alt=\"Description de la photo\" class=\"border-primary marge2\" width=\"250\" height=\"auto\">
+<img src=\"{{ asset('photo3.jpg') }}\" class=\"border-primary marge2\" width=\"450\" height=\"auto\">
 
-<div class=\"card border-primary offset-xxl-1 mb- test\"  style=\"max-width: 30rem;\">
+<div class=\"card border-primary mb- test\"  style=\"max-width: 30rem;\">
     <div class=\"card-header\"><h1> Connecter les entreprises et usagers </h1>
         <br>
         <br>
@@ -176,28 +176,28 @@ class __TwigTemplate_858de84f5d18be75e3b9d20b8979b51a extends Template
     <div class=\"card-body\">
         <p><strong>Mesurer et analyser des signaux</strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 50%;\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 50%;\"  ></div>
             </div>
             <p><strong>Caractériser des système de transmissions et découvrir les modélisation mathématiques </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 65%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 65%;\" ></div>
             </div>
             <p><strong> Déployer des supports de transmissions </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 60%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 60%;\"></div>
             </div>
             <p><strong>Connecter les systèmes de ToIP </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 0%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 0%;\"></div>
             </div>
             <p><strong>Communiquer avec le cllient/collaborateur </strong><p>
             <div class=\"progress\">
-              <div class=\"progress-bar bg-success\" role=\"progressbar\" style=\"width: 0%;\" aria-valuenow=\"25\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>
+              <div class=\"progress-bar bg-success\"   style=\"width: 0%;\"></div>
              </div>
             </div>
         </div>
     </div>
-    <img src=\"{{ asset('photo6.jpg') }}\" alt=\"Description de la photo\" class=\"rounded-corners marge\" width=\"250\" height=\"auto\">
+    <img src=\"{{ asset('photo6.jpg') }}\" class=\"rounded-corners marge\" width=\"450\" height=\"auto\">
 
     
   

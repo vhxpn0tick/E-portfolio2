@@ -50,5 +50,12 @@ class EPortfolioController extends AbstractController
             'controller_name' => 'EPortfolioController',
         ]);
     }
+    #[Route('/formulaire', name: 'app_formulaire')]
+    public function formulaire(): Response
+    {
+        return $this->render('e_portfolio/formulaire.html.twig', [
+            'controller_name' => 'EPortfolioController',
+        ]);
+    }
 
 }

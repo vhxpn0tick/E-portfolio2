@@ -57,7 +57,10 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("logo.png"), "html", null, true);
         echo "\">
         <link rel= \"stylesheet\" href=\"https://bootswatch.com/5/pulse/bootstrap.min.css\">
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js\"></script>
+        <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("stylesheet.css"), "html", null, true);
+        echo "\">
         ";
         // line 10
         echo "        ";
@@ -70,91 +73,21 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
         // line 17
         echo "    </head>
     <body class=\"bg\">
-      <style>
-        .bg {
-              position: relative; /* Important pour positionner correctement le pseudo-élément */
-              background-color: rgba(187, 185, 185, 0.8); /* Couleur de fond légèrement transparente */
-              height: 120vh;
-              color: black;
-            }
-        .bg::before {
-          content: ''; /* Nécessaire pour que le pseudo-élément s'affiche */
-          position: absolute; /* Positionnement absolu par rapport à .bg */
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url(\"";
-        // line 33
-        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("logo2.png"), "html", null, true);
-        echo "\"); /* Remplacez par le chemin de votre image */
-          background-repeat: no-repeat; /* Empêche la répétition de l'image */
-          background-position: center center; /* Centre l'image */
-          opacity: 0.3; /* Valeur de transparence de l'image de fond */
-          z-index: -1; /* Place le pseudo-élément sous le contenu du .bg */
-        }
-        .voila{
-          color: rgba(187, 185, 185);
-        }
-        .marge{
-          margin-top : 5% ;
-          margin-right : 5%;
-          margin-left: 10% ;
 
-        }
-        .marge2{
-          margin-top : 5% ;
-          margin-left : 5%;
-          margin-right: 10% ;
-
-        }
-        .test{
-          background-color:#9354f1 ;
-          border: 2%;
-          color : black ;
-          margin-top: 3%;
-          
-          
-        }
-        .footer {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background-color: #333; /* Choisissez la couleur de fond appropriée */
-          color: white; /* Couleur du texte */
-          text-align: center;
-        }
-        .border-primary {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: left ;
-          
-
-        }
-        .rounded-corners {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: right ;
-          
-
-        }
-
-        </style>
         <nav class=\"navbar navbar-expand-lg bg-primary\" data-bs-theme=\"dark\">
         <div class=\"container-fluid\">
           <a class=\"navbar-brand voila\" href=\"/\">E-Portfolio</a>
-          <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-            <span class=\"navbar-toggler-icon\"></span>
+          <button class=\"navbar-toggler\" type=\"button\" >
           </button>
-          <div class=\"collapse navbar-collapse \" id=\"navbarColor01\">
+          <div class=\"navbar-collapse\">
             <ul class=\"navbar-nav me-auto\">
               <li class=\"nav-item\">
-                <a class=\"nav-link active voila\" href=\"/\">Accueil
-                  <span class=\"visually-hidden\">(current)</span>
+                <a class=\"nav-link\" href=\"/\">Accueil
                 </a>
               </li>
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/infos\">A propos de moi</a>
-              </li>
+              </li> 
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/CV\">CV</a>
               </li>
@@ -167,19 +100,22 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/RT3\">Programmer</a>
               </li>
+              <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/formulaire\">Télécharger</a>
+              </li>
             </ul>
             <form class=\"d-flex\">
-              <input class=\"form-control me-sm-2\" type=\"search\" placeholder=\"Search\">
-              <button class=\"btn btn-secondary  my-2 my-sm-0\" type=\"submit\">Rechercher</button>
+              <input class=\"form-control\"  placeholder=\"Recherche\">
+              <button class=\"btn btn-secondary\" >Rechercher</button>
             </form>
           </div>
         </div>
       </nav>
 
         ";
-        // line 122
+        // line 58
         $this->displayBlock('body', $context, $blocks);
-        // line 125
+        // line 61
         echo "        <br>
         <br>
         <br>
@@ -265,7 +201,7 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
 
     }
 
-    // line 122
+    // line 58
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -275,7 +211,7 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 123
+        // line 59
         echo "        
         ";
         
@@ -307,7 +243,7 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
      */
     public function getDebugInfo()
     {
-        return array (  279 => 123,  269 => 122,  256 => 15,  246 => 14,  233 => 11,  223 => 10,  204 => 5,  183 => 125,  181 => 122,  89 => 33,  71 => 17,  69 => 14,  66 => 13,  63 => 10,  57 => 6,  53 => 5,  47 => 1,);
+        return array (  215 => 59,  205 => 58,  192 => 15,  182 => 14,  169 => 11,  159 => 10,  140 => 5,  119 => 61,  117 => 58,  74 => 17,  72 => 14,  69 => 13,  66 => 10,  62 => 8,  57 => 6,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -317,9 +253,9 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
     <head class=\"bg\">
         <meta charset=\"UTF-8\">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" type=\"image/png\" href=\"{{ asset('logo.png') }}\">
+        <link rel=\"icon\" type=\"image/png\" href=\"{{asset('logo.png') }}\">
         <link rel= \"stylesheet\" href=\"https://bootswatch.com/5/pulse/bootstrap.min.css\">
-        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js\"></script>
+        <link rel=\"stylesheet\" href=\"{{asset('stylesheet.css') }}\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -330,88 +266,21 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
         {% endblock %}
     </head>
     <body class=\"bg\">
-      <style>
-        .bg {
-              position: relative; /* Important pour positionner correctement le pseudo-élément */
-              background-color: rgba(187, 185, 185, 0.8); /* Couleur de fond légèrement transparente */
-              height: 120vh;
-              color: black;
-            }
-        .bg::before {
-          content: ''; /* Nécessaire pour que le pseudo-élément s'affiche */
-          position: absolute; /* Positionnement absolu par rapport à .bg */
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background-image: url(\"{{ asset('logo2.png') }}\"); /* Remplacez par le chemin de votre image */
-          background-repeat: no-repeat; /* Empêche la répétition de l'image */
-          background-position: center center; /* Centre l'image */
-          opacity: 0.3; /* Valeur de transparence de l'image de fond */
-          z-index: -1; /* Place le pseudo-élément sous le contenu du .bg */
-        }
-        .voila{
-          color: rgba(187, 185, 185);
-        }
-        .marge{
-          margin-top : 5% ;
-          margin-right : 5%;
-          margin-left: 10% ;
 
-        }
-        .marge2{
-          margin-top : 5% ;
-          margin-left : 5%;
-          margin-right: 10% ;
-
-        }
-        .test{
-          background-color:#9354f1 ;
-          border: 2%;
-          color : black ;
-          margin-top: 3%;
-          
-          
-        }
-        .footer {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background-color: #333; /* Choisissez la couleur de fond appropriée */
-          color: white; /* Couleur du texte */
-          text-align: center;
-        }
-        .border-primary {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: left ;
-          
-
-        }
-        .rounded-corners {
-          border-radius: 2%; /* Ajustez la valeur pour obtenir l'arrondi que vous souhaitez */
-          float: right ;
-          
-
-        }
-
-        </style>
         <nav class=\"navbar navbar-expand-lg bg-primary\" data-bs-theme=\"dark\">
         <div class=\"container-fluid\">
           <a class=\"navbar-brand voila\" href=\"/\">E-Portfolio</a>
-          <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarColor01\" aria-controls=\"navbarColor01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-            <span class=\"navbar-toggler-icon\"></span>
+          <button class=\"navbar-toggler\" type=\"button\" >
           </button>
-          <div class=\"collapse navbar-collapse \" id=\"navbarColor01\">
+          <div class=\"navbar-collapse\">
             <ul class=\"navbar-nav me-auto\">
               <li class=\"nav-item\">
-                <a class=\"nav-link active voila\" href=\"/\">Accueil
-                  <span class=\"visually-hidden\">(current)</span>
+                <a class=\"nav-link\" href=\"/\">Accueil
                 </a>
               </li>
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/infos\">A propos de moi</a>
-              </li>
+              </li> 
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/CV\">CV</a>
               </li>
@@ -424,10 +293,13 @@ class __TwigTemplate_a1a8719410c4573e6b39da2728386f2d extends Template
               <li class=\"nav-item\">
                 <a class=\"nav-link\" href=\"/RT3\">Programmer</a>
               </li>
+              <li class=\"nav-item\">
+                <a class=\"nav-link\" href=\"/formulaire\">Télécharger</a>
+              </li>
             </ul>
             <form class=\"d-flex\">
-              <input class=\"form-control me-sm-2\" type=\"search\" placeholder=\"Search\">
-              <button class=\"btn btn-secondary  my-2 my-sm-0\" type=\"submit\">Rechercher</button>
+              <input class=\"form-control\"  placeholder=\"Recherche\">
+              <button class=\"btn btn-secondary\" >Rechercher</button>
             </form>
           </div>
         </div>

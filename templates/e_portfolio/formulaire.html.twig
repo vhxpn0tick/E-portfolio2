@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="text-center row justify-content-md-center">
+      <div class="hauteur col col-lg-5 card border-primary mx-1 test ">
+        <div class="card-header"><strong>Télécharger mon CV</strong></div>
+        <div class="card-body">         
+          <form method="post"  action="/">
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+            <br>
+            <br>
+
+            <label for="motdepasse">Mot de passe</label>
+            <input type="password" id="motdepasse" name="motdepasse" required>
+            <br>
+            <br>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="{{ asset('CVMathieuBovy.pdf') }}" class="btn btn-primary" download>Télécharger le PDF</a>
+            </div>
+
+        </form>
+        </div>
+      </div>
+{% endblock %}

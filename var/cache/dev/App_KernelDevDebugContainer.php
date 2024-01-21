@@ -16,6 +16,6 @@ if (!\class_exists(App_KernelDevDebugContainer::class, false)) {
 
 return new \ContainerVeCMYR5\App_KernelDevDebugContainer([
     'container.build_hash' => 'VeCMYR5',
-    'container.build_id' => 'bb4b34bd',
-    'container.build_time' => 1705401438,
+    'container.build_id' => 'bf816cd8',
+    'container.build_time' => 1705674491,
 ], __DIR__.\DIRECTORY_SEPARATOR.'ContainerVeCMYR5');

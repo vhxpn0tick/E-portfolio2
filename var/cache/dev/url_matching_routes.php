@@ -20,6 +20,7 @@ return [
         '/RT1' => [[['_route' => 'app_rt1', '_controller' => 'App\\Controller\\EPortfolioController::rt1'], null, null, null, false, false, null]],
         '/RT2' => [[['_route' => 'app_rt2', '_controller' => 'App\\Controller\\EPortfolioController::rt2'], null, null, null, false, false, null]],
         '/RT3' => [[['_route' => 'app_rt3', '_controller' => 'App\\Controller\\EPortfolioController::RT3'], null, null, null, false, false, null]],
+        '/formulaire' => [[['_route' => 'app_formulaire', '_controller' => 'App\\Controller\\EPortfolioController::formulaire'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

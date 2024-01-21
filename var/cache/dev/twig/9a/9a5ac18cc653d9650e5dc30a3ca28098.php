@@ -93,8 +93,9 @@ class __TwigTemplate_242d31781535af628ecbef73e6fcf828 extends Template
     <br>
     <br>
     <br>
-    
-      <div class=\"card border-primary mb-3 mx-1 test\"  style=\"max-width: 30rem;\">
+</div>
+<div class=\"offset-xxl-5\">
+      <div class=\"card border-primary mx-1 test \">
         <div class=\"card-header\">Information Personnelle</div>
         <div class=\"card-body\">
           <p class=\"card-text\">Nom : BOVY </p>
@@ -103,7 +104,7 @@ class __TwigTemplate_242d31781535af628ecbef73e6fcf828 extends Template
           <p class=\"card-text\">Adresse : 224 chemin de la croix rouge 42330 Aveizieux</p>
           <p class=\"card-text\">Mail : mathieubovydumas@gmail.com</p>
           <p class=\"card-text\">Numéro de téléphone : 07 68 56 71 22 </p>
-          <a href=\"/infos\" class=\"btn btn-primary offset-xxl-7 rounded-corners\" role=\"button\">Pour en Savoir plus </a>
+          <a href=\"/infos\" class=\"btn btn-primary offset-xxl-7 rounded-corners\">Pour en Savoir plus </a>
         </div>
       </div>
    
@@ -159,8 +160,9 @@ class __TwigTemplate_242d31781535af628ecbef73e6fcf828 extends Template
     <br>
     <br>
     <br>
-    
-      <div class=\"card border-primary mb-3 mx-1 test\"  style=\"max-width: 30rem;\">
+</div>
+<div class=\"offset-xxl-5\">
+      <div class=\"card border-primary mx-1 test \">
         <div class=\"card-header\">Information Personnelle</div>
         <div class=\"card-body\">
           <p class=\"card-text\">Nom : BOVY </p>
@@ -169,7 +171,7 @@ class __TwigTemplate_242d31781535af628ecbef73e6fcf828 extends Template
           <p class=\"card-text\">Adresse : 224 chemin de la croix rouge 42330 Aveizieux</p>
           <p class=\"card-text\">Mail : mathieubovydumas@gmail.com</p>
           <p class=\"card-text\">Numéro de téléphone : 07 68 56 71 22 </p>
-          <a href=\"/infos\" class=\"btn btn-primary offset-xxl-7 rounded-corners\" role=\"button\">Pour en Savoir plus </a>
+          <a href=\"/infos\" class=\"btn btn-primary offset-xxl-7 rounded-corners\">Pour en Savoir plus </a>
         </div>
       </div>
    

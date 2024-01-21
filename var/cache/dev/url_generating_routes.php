@@ -22,4 +22,5 @@ return [
     'app_rt1' => [[], ['_controller' => 'App\\Controller\\EPortfolioController::rt1'], [], [['text', '/RT1']], [], [], []],
     'app_rt2' => [[], ['_controller' => 'App\\Controller\\EPortfolioController::rt2'], [], [['text', '/RT2']], [], [], []],
     'app_rt3' => [[], ['_controller' => 'App\\Controller\\EPortfolioController::RT3'], [], [['text', '/RT3']], [], [], []],
+    'app_formulaire' => [[], ['_controller' => 'App\\Controller\\EPortfolioController::formulaire'], [], [['text', '/formulaire']], [], [], []],
 ];
